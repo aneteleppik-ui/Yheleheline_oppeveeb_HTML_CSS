@@ -1,13 +1,36 @@
 img {
-    width: 100px;
-    border-radius: 50px;
-    float: left;
-    margin-right: 10px;
-  }
-
-  .username {
-    font-weight: bold;
-  }
+  width: 100px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.username {
+  font-weight: bold;
+}
 .pealkiri {
-    text-align:center;
+  text-align: center;
+  color: purple;
+}
+body {
+  background-color: rgb(249, 225, 247);
+}
+main {
+  background-color: seashell;
+  padding: 20px;
+}
+.hero-image {
+  background-image: url("")
+}
+header {
+  background-image: url("../images/html.jpg");
+  height: 100px;
+  display :grid
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
 }
