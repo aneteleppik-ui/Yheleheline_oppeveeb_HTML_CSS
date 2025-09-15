@@ -4,16 +4,18 @@
 }
 .pealkiri {
   text-align: center;
-  color: purple;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
 }
 body {
-  background-color: rgb(255, 0, 234);
+  background-color: rgb(217, 193, 158);
   font-family: Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  margin: 0;
 }
 h1 { font-size: 2rem; margin-bottom: 1rem; }
 h2 { font-size: 1.5rem; margin: 1rem 0 0.5rem; }
@@ -36,7 +38,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
-    flex-wrap: wrap;
 }
 .card {
   background-color: #e5e7eb;
@@ -54,14 +55,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .kontaktpilt {
   width: 100px;
@@ -74,19 +78,23 @@ header nav {
   background-color: #04AA6D;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 8px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
+  border-radius: 5px;
   cursor: pointer;
+  white-space: nowrap; 
+  flex-shrink: 0; 
 }
+
 .button:hover {
-  background-color: #6440cf;
+  background-color: #a8debe;
 }
 a:hover {
-  color: red;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 img, video {
@@ -94,6 +102,12 @@ img, video {
   height: auto;
 }
 @media (max-width: 600px) {
+  .button {
+        width: 100%;
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
     header nav {
         flex-direction: column;
         gap: 10px;
@@ -103,14 +117,13 @@ img, video {
     }
 .card {
         width: 100%;
-        padding: 1.5rem;
+        box-sizing: border-box;
     }
  .card video,
  .card img {
         width: 100%;
         height: auto;
     }
-}
 @media (min-width: 768px) {
     body {
         font-size: 1.125rem;
@@ -120,6 +133,31 @@ a:focus-visible, button:focus-visible {
     outline: 2px solid blue;
     outline-offset: 2px;
 }
+html {
+  scroll-behavior: smooth;
+}
 section {
-  scroll-margin-top: 120px;
+  scroll-behavior: smooth;
+}
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  justify-content: center;
+}
+section {
+  scroll-margin-top: 290px;
+}
+.username svg {
+  animation: heartbeat 1s infinite;
+  transform-origin: center;
+}
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
 }
