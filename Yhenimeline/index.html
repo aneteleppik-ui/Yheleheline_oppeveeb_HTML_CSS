@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My first web page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#sissejuhatus">Liigu sisu juurde</a>
+    <header>
+      <nav aria-label="Põhinavigatsioon">
+        <a class="button" href="#sissejuhatus">Sissejuhatus</a>
+        <a class="button" href="#teooria">Teooria</a>
+        <a class="button" href="#kontakt">Kontakt</a>
+        <a class="button" href="#meedia">Meedia</a>
+      </nav>
+    </header>
+    <main>
+      <section id="sissejuhatus">
+        <h1 class="pealkiri">HTML ja CSS</h1>
+        <h2 class="pealkiri">Sissejuhatus</h2>
+        <p>
+         Kodulehe loomiseks on mitmeid viise. Üks kõige aluselisemaid, kuigi mitte alati kõige lihtsam, on HTML-koodi ise kirjutamine. Kuigi internetis leidub rohkelt õpetusi, olen koostanud selle konspekti, et koondada kokku just need teadmised ja näpunäited, mis aitavad mul (ja hiljem ka teistel) samm-sammult veebilehti luua.
+        </p>
+        <h3>Mis on HTML?</h3>
+        <p>
+          HTML (HyperText Markup Language) on veebilehtede loomise põhikeel. See on lihtne märgenduskeel, millega määratakse teksti struktuur ja tähendus nii, et veebibrauserid oskaksid seda õigesti kuvada. HTML-dokumendid on tavalised tekstifailid, mis sisaldavad spetsiaalseid koode ehk tage.
+HTML võimaldab lisaks teksti vormindamisele (näiteks rasvane või kaldkiri) ka pilte, heli ja linke teistele lehtedele või ressurssidele lisada. Seetõttu moodustabki HTML veebilehtede aluse.
+HTML-faile saab kirjutada peaaegu iga tekstiredaktoriga. Kuna erinevad veebibrauserid võivad koodi veidi erinevalt kuvada, on soovitatav oma lehti testida mitmes brauseris, et tagada ühtlane tulemus.
+        </p>
+      </section>
+      <section id="teooria">
+        <h2 class="pealkiri">Teooria</h2>
+        <h3>HTML tähendus.</h3>
+        <p>
+          HTML on lühend sõnadest HyperText Markup Language, mis tähendab
+          hüperteksti märgistuskeelt. HTML on keel, mida kasutatakse
+          veebilehtede loomiseks. HTML koosneb erinevatest elementidest, mida
+          kasutatakse veebilehe struktuuri ja sisu määratlemiseks. Näiteks
+          kasutatakse HTML-i pealkirjade, lõikude, piltide, linkide ja tabelite
+          loomiseks. HTML on oluline osa veebiarendusest ja see on aluseks
+          kõigile veebilehtedele. HTML-i kasutatakse koos teiste
+          veebitehnoloogiatega, nagu CSS (Cascading Style Sheets) ja JavaScript,
+          et luua interaktiivseid ja visuaalselt atraktiivseid veebilehti.
+        </p>
+      </section>
+      <section
+       id="meedia">
+        <h2 class="pealkiri">Meedia</h2>
+        <h3>Siin on kaardid</h3>
+      </section>
+      <section class="cards">
+        <div class="card">
+          <h3>Vajuta siia, et minna sissejuhatusse tagasi</h3>
+          <a href="#sissejuhatus">
+            <img
+              src="images/part.jpg"
+              alt="vii sissejuhatusse"
+              width="300"
+              height="200"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <div class="card">
+          <h3>Video merest</h3>
+          <video width="100%" height="240" controls>
+            <source src="media/Vesi.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="card">
+          <h3>Pilt lingina</h3>
+          <p>Vajuta pildi peale</p>
+          <a href="https://www.w3schools.com" target="_blank"
+            ><img
+              src="images/gif/kasslingina.gif"
+              alt="https://www.w3schools.com"
+          /></a>
+        </div>
+        <div class="card">
+          <h3>Audio</h3>
+          <audio controls>
+            <source src="media/laul.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <img class="kontaktpilt" src="images/cat.jpg" alt="Pilt kassist" />
+        <p class="username">
+          Anete Leppik
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="red"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+             2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09
+             C13.09 3.81 14.76 3 16.5 3 
+             19.58 3 22 5.42 22 8.5
+             c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            />
+          </svg>
+        </p>
+        <p>UX 2025 õppija</p>
+      </section>
+    </footer>
+  </body>
+</html>
+  
+
